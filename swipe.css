@@ -127,15 +127,15 @@ a:hover:after {
 }
 .swipe {
     position: absolute;
-    bottom: 3rem;
-    right: 3rem;
+    bottom: 2rem;
+    right: 2rem;
     z-index: 1000;
 }
 
 .swipe > svg {
     position: relative;
-    width: 3rem; 
-    height: 3rem;
+    width: 1.5rem; 
+    height: 1.5rem;
     vertical-align: middle;
     fill: #fafafa;
     stroke: white;
@@ -153,10 +153,21 @@ a:hover:after {
 }
 
 @media screen and (min-width: 768px) {
+    
     .img_container {
         width: 50%;
         object-fit: cover;
         object-position: center;
+    }
+
+    .swipe > svg {
+        width: 3rem; 
+        height: 3rem;
+    }
+
+    .swipe {
+        bottom: 3rem;
+        right: 3rem;
     }
 }
 
