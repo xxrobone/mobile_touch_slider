@@ -105,7 +105,6 @@ a:hover:after {
     position: relative;
     margin-top: 100px;
     width: 80%;
-    height: 200px;
     object-fit: cover;
     object-position: center;
 }
@@ -126,15 +125,53 @@ a:hover:after {
 .grab .slide img {
     transform: scale(0.9);
 }
+.swipe {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 1000;
+}
+
+.swipe > svg {
+    position: relative;
+    width: 3rem; 
+    height: 3rem;
+    vertical-align: middle;
+    fill: #fafafa;
+    stroke: white;
+    overflow: hidden;
+    animation: swiper .3s ease 3s 10 alternate both;
+}
+
+@keyframes swiper {
+    from {
+        transform: translateX(0deg);
+    } 
+    to {
+        transform: translateX(-5px);
+    }
+}
 
 @media screen and (min-width: 768px) {
-    img {
-        width: 40%;
+    .img_container {
+        width: 50%;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    img {
+    .slide {
+        margin: 0 auto;
+        padding: 5rem 2.5rem 2rem;
+    }
+
+    a {
+        bottom: 5vh;
+    }
+    .img_container {
         width: 30%;
+        object-fit: cover;
+        object-position: center;
     }
 }
