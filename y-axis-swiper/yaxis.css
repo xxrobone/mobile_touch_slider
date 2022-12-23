@@ -10,55 +10,16 @@ html,
 body {
     width: 100%;
   height: 100%;
-  font-family: 'Roboto', 'condensed';
-  overflow-x: hidden;
-}
-
-/* to test if the grab and drag works on the Y axis */
-.page_top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    place-content: center;
-    background-color: silver;
-    z-index: 1;
-    text-align: center;
-    font-size: 8rem;
-}
-
-.page_bottom {
-    position: absolute;
-    top: 200vh;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    color: white;
-    display: grid;
-    place-content: center;
-    z-index: 1;
-    text-align: center;
-    font-size: 8rem;  
-}
-
-.page_mid {
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: radial-gradient(circle, rgb(54, 54, 54) 0%, rgb(15, 15, 15) 100%);
+  background: radial-gradient(circle, rgb(54, 54, 54) 0%, rgb(15, 15, 15) 100%);
   background-repeat: no-repeat;
+  font-family: 'Roboto', 'condensed';
+  overflow: hidden;  
 }
 
 .slider_container {
-    position: relative;
     height: 100vh;
     display: inline-flex;
-    transform: translateX(0);
+    transform: translateY(0);
     background-color: transparent;
     transition: transform 0.3s ease-in-out;
     cursor: grab;
@@ -68,7 +29,7 @@ body {
     margin: 0 auto;
     padding: 6rem 0 2rem;
     width: 100vw;
-    max-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;   
@@ -168,7 +129,7 @@ a:hover:after {
 .swipe {
     position: absolute;
     bottom: 2rem;
-    left: 90vw;
+    right: 2rem;
     z-index: 1000;
 }
 
@@ -177,9 +138,8 @@ a:hover:after {
     width: 1.5rem; 
     height: 1.5rem;
     vertical-align: middle;
-    fill: #303030;
-    stroke: rgb(19, 19, 19);
-    stroke-width: 1px;
+    fill: #fafafa;
+    stroke: white;
     overflow: hidden;
     animation: swiper .3s ease 3s 10 alternate both;
 }
