@@ -20,6 +20,8 @@ body {
     height: 100vh;
     display: inline-flex;
     transform: translateX(0);
+    background: linear-gradient(to right, rgba(87,87,87,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
     transition: transform 0.3s ease-in-out;
     cursor: grab;
 }
@@ -29,8 +31,6 @@ body {
     padding: 6rem 0 2rem;
     width: 100vw;
     max-height: 100vh;
-    background: radial-gradient(circle, rgba(87,87,87,1) 0%, rgba(0,0,0,1) 100%);
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;   
