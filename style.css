@@ -63,6 +63,7 @@ nav > ul > li > a:after {
     position: absolute;
 }
 
+
 /* to test if the grab and drag works on the Y axis */
 .page_top {
     position: absolute;
@@ -77,8 +78,8 @@ nav > ul > li > a:after {
     text-align: center;
 }
 
-.page_top > .nav > p {
-    font-size: 3rem;
+ p {
+    font-size: 2rem;
 }
 
 .page_top > h1 {
