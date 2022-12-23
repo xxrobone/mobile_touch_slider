@@ -19,8 +19,6 @@ body {
 .slider_container {
     height: 100vh;
     display: inline-flex;
-    background: radial-gradient(circle, rgba(87,87,87,1) 0%, rgba(0,0,0,1) 100%);
-    background-repeat: no-repeat;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
     cursor: grab;
@@ -28,12 +26,13 @@ body {
 
 .slide {
     margin: 0 auto;
-    padding: 6rem 2.5rem 2rem;
-    max-height: 100vh;
+    padding: 6rem 0 2rem;
     width: 100vw;
+    max-height: 100vh;
+    background: radial-gradient(circle, rgba(87,87,87,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;   
 }
 
@@ -73,7 +72,7 @@ a {
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
     font-size: clamp(2rem, 3vw, 2.5rem); 
-    font-weight: 300;
+    font-weight: 700;
     text-decoration: none;
     color: whitesmoke;
 }
